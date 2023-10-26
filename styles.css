@@ -1,0 +1,271 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-bg: linear-gradient(#00F5FF, #16FF00, #FFFF00,#FF1700);
+
+}
+
+
+
+body{
+    background-image:var(--color-bg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    overflow: hidden;
+}
+
+.anthead{
+    position: absolute;
+    left: 50%;
+    bottom: 62vmin;
+    transform: translateX(-50%);
+    width: 12vmin;
+    height: 12vmin;
+    background-color: rgb(86, 53, 53);
+
+    clip-path: ellipse(50% 50% at 50% 50%);
+    transform-origin: center bottom;
+    animation: open-flower 2s 1s backwards;
+}
+
+.antbod{
+    position: absolute;
+    left: 40%;
+    bottom: 62vmin;
+    transform: translateX(-50%);
+    width: 30vmin;
+    height: 12vmin;
+    background-color: rgb(86, 53, 53);
+
+    clip-path: ellipse(50% 50% at 50% 50%);
+    transform-origin: center bottom;
+    animation: open-flower 2s 1s backwards;
+}
+
+.antass{
+    position: absolute;
+    left: 22%;
+    bottom: 60vmin;
+    transform: translateX(-50%);
+    width: 45vmin;
+    height: 16vmin;
+    background-color: rgb(86, 53, 53);
+
+    clip-path: ellipse(50% 50% at 50% 50%);
+    transform-origin: center bottom;
+    animation: open-flower 2s 1s backwards;
+}
+
+.legone {
+    position: absolute;
+  height: 80px;
+  width:2px;
+  background: black;
+    left: 19%;
+    bottom: 72vmin;
+    transform: translateX(-50%);
+
+transform: rotate(-45deg);
+
+transform-origin: left;
+}
+
+.legtwo {
+    position: absolute;
+  height: 75px;
+  width:2px;
+  background: black;
+    left: 34%;
+    bottom: 70vmin;
+    transform: translateX(-50%);
+
+transform: rotate(-45deg);
+
+transform-origin: left;
+}
+
+.legthree {
+    position: absolute;
+  height: 75px;
+  width:2px;
+  background: black;
+    left: 39%;
+    bottom: 70vmin;
+    transform: translateX(-50%);
+
+transform: rotate(-45deg);
+
+transform-origin: left;
+}
+
+.legfour {
+    position: absolute;
+  height: 80px;
+  width:2px;
+  background: black;
+    left: 19%;
+    bottom: 41.5vmin;
+    transform: translateX(-50%);
+
+transform: rotate(45deg);
+
+transform-origin: left;
+}
+
+.legfive {
+    position: absolute;
+  height: 75px;
+  width:2px;
+  background: black;
+    left: 34%;
+    bottom: 45vmin;
+    transform: translateX(-50%);
+
+transform: rotate(45deg);
+
+transform-origin: left;
+}
+
+.legsix {
+    position: absolute;
+  height: 75px;
+  width:2px;
+  background: black;
+    left: 39%;
+    bottom: 45vmin;
+    transform: translateX(-50%);
+
+transform: rotate(45deg);
+
+transform-origin: left;
+}
+
+.antenna {
+    position: absolute;
+  height: 2px;
+  width:40px;
+  background: black;
+    left: 55%;
+    bottom: 65vmin;
+    transform: translateX(-50%);
+
+
+}
+.antenna2 {
+    position: absolute;
+  height: 2px;
+  width:40px;
+  background: black;
+    left: 55%;
+    bottom: 70vmin;
+    transform: translateX(-50%);
+
+
+}
+
+.canvas-container{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 150px;
+}
+
+
+
+bunch {
+  	animation: shrink 0.8s infinite linear;
+}
+
+bunch banana {
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	top: calc(50% - 100px);
+	left: calc(50% - 60px);
+}
+
+bunch banana:after,
+bunch banana *,
+bunch banana *:before,
+bunch banana *:after {
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	content: "";
+    
+}
+
+bunch banana:first-child {
+	margin: -34px 0 0 -2px;
+	transform: rotate(14deg);
+    transform: translateY(-200px);
+
+}
+
+bunch banana:first-child:after {
+	transform: rotate(-22deg);
+	margin-left: -4px;
+}
+
+bunch banana:after {
+	top: 25px;
+	left: 119px;
+	width: 16px;
+	height: 30px;
+	background: rgb(254, 217, 76);
+	border-radius: 0px 0px 3px 2px/0px 0px 20px 20px;
+	transform: rotate(-7deg);
+}
+
+bunch banana dark {
+	top: 50px;
+	width: 150px;
+	height: 126px;
+	overflow: hidden;
+	border-radius: 0px 22px 94px 64px/0px 52px 88px 25px;
+}
+
+bunch banana dark:before {
+	width: 157px;
+	height: 121px;
+	box-shadow: 0 0px 0 45px rgb(254, 202, 50);
+	top: -10px;
+	left: -18px;
+	border-radius: 0 0 89px 60px/0 0 90px 24px;
+	transform: rotate(-7deg);
+}
+
+bunch banana light {
+	top: 50px;
+	width: 138px;
+	height: 116px;
+	overflow: hidden;
+	border-radius: 0px 10px 101px 10px/0px 10px 95px 20px;
+}
+
+bunch banana light:before {
+	width: 140px;
+	height: 129px;
+	box-shadow: 0 0px 0 45px rgb(254, 217, 76);
+	top: -35px;
+	left: -8px;
+	border-radius: 0 0 120px 0px/0 0 133px 0px;
+	transform: rotate(-7deg);
+}
+
+
+
+@keyframes shrink {
+	50% {
+		transform: scale(0.7, 0.7);
+	}
+}
